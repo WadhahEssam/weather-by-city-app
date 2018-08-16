@@ -1,7 +1,6 @@
 import React , { Component } from 'react' ;
 import { connect } from 'react-redux' ;
 import { Sparklines, SparklinesLine } from 'react-sparklines';
-import Map from './map' ;
 
 class WeatherList extends Component {
 
@@ -18,8 +17,6 @@ class WeatherList extends Component {
             humidity.push( day.main.humidity ) ;
         }) ;
 
-        const lon = cityData.city.coord.lon ;
-        const lat = cityData.city.coord.lat ;
 
 
         console.log('hey') ;
@@ -27,7 +24,7 @@ class WeatherList extends Component {
 
         return (
             <tr key={ cityData.city.id } >
-                <td > <Map lon={lon} lat={lat} /> </td>
+                <td className={'city-name'}> {cityData.city.name} </td>
                 <td >
                     <Sparklines data={temp} width={100} height={50}>
                         <SparklinesLine color="red" />

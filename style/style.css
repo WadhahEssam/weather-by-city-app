@@ -19,3 +19,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+.city-name {
+    vertical-align: inherit !important;
+}

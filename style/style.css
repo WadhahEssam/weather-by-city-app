@@ -1,3 +1,21 @@
 .search-bar {
     margin-top : 20px ;
 }
+
+th, td {
+    max-width:95px ;
+    min-width:95px ;
+}
+
+.logo {
+    margin-top: 21px;
+ }
+
+#map {
+    height: 100%;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
